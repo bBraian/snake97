@@ -71,7 +71,7 @@ h1{
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 9999;
-    display: block;
+    display: none;
   }
   
 .modalContent{
@@ -119,3 +119,82 @@ h1{
     line-height: 30px;
     font-family: cursive;
   }
+
+.mobile_buttons{
+    width: 50%;
+    height: 180px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.botton_up{
+    width: 60%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botton_down{
+    width: 60%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botton_left{
+    width: 45%;
+    margin-right: 5%;
+    height: 50px;
+}
+.botton_rigth{
+    width: 45%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.up{
+    
+    padding: 10px;
+    margin-top: 6px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.down{
+    padding: 10px;
+    margin-top: 6px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rigth{
+    padding: 10px;
+    margin-top: 6px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left{
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
