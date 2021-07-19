@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.querySelector('.start')
     const modal = document.querySelector('.modal')
     const closeBtn = document.querySelector('.closeBtn')
+    document.querySelector('.up').onclick = function() {moveUp()}
+    document.querySelector('.down').onclick = function() {moveDown()}
+    document.querySelector('.left').onclick = function() {moveLeft()}
+    document.querySelector('.rigth').onclick = function() {moveRigth()}
   
     const width = 10
     let currentIndex = 0 //so first div in our grid
@@ -15,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let intervalTime = 0
     let interval = 0
   
-  
+
+
+
     //to start, and restart the game
     function startGame() {
       currentSnake.forEach(index => squares[index].classList.remove('snake'))
@@ -93,8 +99,37 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (e.keyCode === 40) {
         direction = +width //if we press down, the snake head will instantly appear in the div ten divs from where you are now
       }
+
     }
+
+    function moveDown(){
+      squares[currentIndex].classList.remove('snake')
+      direction = +width
+    }
+
+    function moveUp(){
+      squares[currentIndex].classList.remove('snake')
+      direction = -width
+    }
+
+    function moveLeft(){
+      squares[currentIndex].classList.remove('snake')
+      direction = -1
+    }
+
+    function moveRigth(){
+      squares[currentIndex].classList.remove('snake')
+      direction = 1
+    }
+
+
+    
   
     document.addEventListener('keyup', control)
     startBtn.addEventListener('click', startGame)
+/*
+    up.addEventListener('keyup', moveMobile)
+    down.addEventListener('keyup', moveMobile(2))
+    left.addEventListener('keyup', moveMobile(4))
+    right.addEventListener('keyup', moveMobile(6))*/
 })
